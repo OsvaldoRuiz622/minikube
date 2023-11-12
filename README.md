@@ -15,3 +15,5 @@ Sube tu liga de flipgrid con la demo de tu programa
           Mostrar el acceso via dominio a la API REST
           Muestra un ejemplo actualizando un elemento
           
+![LCaptura1](https://github.com/OsvaldoRuiz622/minikube/blob/main/api.oruiz.com.png)
+![LCaptura1](https://github.com/OsvaldoRuiz622/minikube/blob/main/localhost.png)
