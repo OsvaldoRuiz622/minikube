@@ -17,3 +17,4 @@ Sube tu liga de flipgrid con la demo de tu programa
           
 ![LCaptura1](https://github.com/OsvaldoRuiz622/minikube/blob/main/api.oruiz.com.png)
 ![LCaptura1](https://github.com/OsvaldoRuiz622/minikube/blob/main/localhost.png)
+![LCaptura1](https://github.com/OsvaldoRuiz622/minikube/blob/main/pods-deploys-service-ingress-pv.png)
