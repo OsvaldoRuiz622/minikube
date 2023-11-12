@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: apigo-deployment
+spec:
+  selector:
+    matchLabels:
+      app: apigo
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        app: apigo
+    spec:
+      containers:
+        - name: apigo
+          image: osvaldoruiz622/go-app:apirest
+          env:
+            - name: DATABASE_URL
+              value: postgres://postgres:postgres@postgres-service:5432/postgres?sslmode=disable
+          ports:
+            - containerPort: 8080
+            
+#para el servicio de exponer la api
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: apigo-service
+spec:
+  selector:
+    app: apigo
+  ports:
+    - protocol: TCP
+      port: 8080
+      targetPort: 8080
